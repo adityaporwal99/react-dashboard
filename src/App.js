@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Col, Container, Row } from 'react-bootstrap';
 import './App.css';
+import Dashboard from './components/Dashboard';
+import SidePanel from './components/SidePanel';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Container fluid>
+            <Row>
+                <h2 className='text-center p-2 m-0'>Dashboard</h2>
+                <hr className='m-0' />
+                <Col lg={10} className='p-3 dashboard'>
+                    <Dashboard />
+                </Col>
+                <Col lg={2} className='border-start p-3 border-secondary-subtle sidepanel'>
+                    <SidePanel />
+                </Col>
+            </Row>
+        </Container>
+    );
 }
 
 export default App;

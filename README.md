@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+# React Dashboard
+This react dashboard application is built using React.js and Redux toolkit which add/remove widgets dynamically.
+## Technologies/Concept
+This application used various libraries :
+* **`@reduxjs/toolkit`** and **`react-redux`** for state management
+* **`bootstrap`** and **`react-bootstrap`** for styling/responsive
+## Installation/Setup
+* Install NodeJS
+* Download/Clone the repository to local.
+* In the terminal, go to the project folder and run the **`npm install`** command to install all the npm packages.
+* Now, type **`npm start`** in order to run the application.
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +79,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->

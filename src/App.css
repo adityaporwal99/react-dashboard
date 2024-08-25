@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dashboard {
+    background-color: #e9ecef;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidepanel {
+    background-color: #dee2e6;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+    background-color: #f8f9fa;
 }
 
-.App-link {
-  color: #61dafb;
+.widget {
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.widget .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addWidget {
+    width: 250px;
+    height: 200px;
+    border: 1px dashed black;
+}
+
+.addWidget .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.cross {
+    background-color: #fff;
+    color: #808080;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.trash {
+    color: #808080;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cross:hover,
+.trash:hover {
+    color: #000000;
 }
